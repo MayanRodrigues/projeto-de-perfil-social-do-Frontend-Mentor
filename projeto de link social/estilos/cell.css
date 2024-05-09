@@ -1,0 +1,89 @@
+/*pre configs*/
+@charset "UTF-8";
+
+@font-face {
+    font-family: inter-Bold ;
+    src: url(../assets/fonts/static/Inter-Bold.ttf) format(TrueType) 
+         url(../assets/fonts/static/Inter-Regular.ttf) format(TrueType)
+         url(../assets/fonts/static/Inter-SemiBold.ttf) format(TrueType)
+         url(../assets/fonts/static/Inter-VariableFont_slnt\,wght.ttf) format(TrueType);
+         font-style: normal;
+         font-weight: 100, 200, 300, 400, 600, 700;
+}
+
+:root{
+    --cor01:hsl(75, 94%, 57%);
+    --cor02:hsl(0, 0%, 100%);
+    --cor03:hsl(0, 0%, 20%);
+    --cor04:hsl(0, 0%, 12%);
+    --cor05:hsl(0, 0%, 8%);
+    --font: font-family: "Inter", sans-serif;;
+}
+
+/* configs globais */
+
+@media(max-width: 460px){
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--cor02);
+    font-family: var(--font);
+}
+
+h1{
+    font-size: 48px;}
+
+p{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+body{
+    background-color: var(--cor05);
+}
+
+/* conteiner pai */
+
+#conteudo-p{
+    border-radius: 10px;
+    background-color: var(--cor04);
+    display: inline-block;
+    padding: 30px;
+    width: 600px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 84vh 55vw;
+}
+
+/* conteudo do top do profile */
+
+.cont-top img{
+    width: 160px;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.text{
+    color: var(--cor01);
+    padding-top: 8px;
+}
+
+/* links */
+
+.links a{
+    font-size: 30px;
+    padding: 15px;
+    background-color: var(--cor03);
+    display: block;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
+
+a:hover{
+    padding: 14px;
+    background-color: var(--cor01);
+}
+
+}
